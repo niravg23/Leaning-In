@@ -1,0 +1,160 @@
+@media (max-width: 1100px) {
+  header div.maintext {
+    margin: 0 10vw;
+  }
+  header div.maintext p {
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+
+  header div.maintext .cta-header a:first-child {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  header div.maintext .cta-header {
+    justify-content: flex-start;
+    padding: 0;
+  }
+  main .section2 .services .issues .cards .btn {
+    font-size: 1.2rem;
+    line-height: 1.25rem;
+    padding: 0.75rem 1.75rem;
+  }
+  main .section3 div.showcase {
+    height: 1800px;
+  }
+  main .section1 .about h2 {
+    font-size: 4rem;
+  }
+  main .section3 .container .contact .heading {
+    padding: 0 4rem;
+    padding-top: 130px;
+  }
+  main .section3 .container .contact .heading h2 {
+    font-size: 2.5rem;
+  }
+  main .section3 .container .contact .form-card {
+    display: block;
+    padding: 0 5rem;
+  }
+
+  main .section3 .container .contact .form-card .contact-details {
+    background: black;
+    padding-right: 0;
+  }
+
+  footer .newsletter .container-sub .item1 {
+    display: none;
+  }
+  footer .newsletter .container-sub .item2 {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  header div.maintext .cta-header {
+    display: block;
+  }
+  header div.maintext .cta-header a.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 1.5erm;
+  }
+  header div.maintext .cta-header a.btn:last-child {
+    margin-top: 2rem;
+  }
+  header div.maintext p {
+    font-size: 2rem;
+  }
+  header div.maintext span {
+    font-size: 3rem;
+  }
+  main .section1 .achievement-about {
+    display: block;
+  }
+  main .section1 .achievement-about .achievement:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  main .section1 .achievement-about .achievement p {
+    margin-top: 0rem;
+  }
+  main .section2 .container .services .heading h2 {
+    font-size: 2.25rem;
+  }
+  main .section2 .services .issues {
+    display: block;
+    flex: 33%;
+    margin: 0 5rem;
+    margin-top: 5rem;
+  }
+  main .section2 .services .issues .cards {
+    margin-bottom: 2rem;
+    border-radius: 1.5rem;
+  }
+  main .section3 .container .contact .heading {
+    padding: 0 2rem;
+    padding-top: 130px;
+  }
+  main .section3 .container .contact .heading h2 {
+    font-size: 2.25rem;
+  }
+  main .section3 .container .contact .form-card {
+    display: block;
+    padding: 0 2rem;
+  }
+  footer .newsletter {
+    padding: 2rem 1rem;
+    width: 85vw;
+  }
+  div.verticleline44,
+  .verticleline4 {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  header div.maintext {
+    margin: auto 5vw;
+    justify-content: center;
+    padding: 2rem 0.5rem;
+  }
+  header div.maintext .cta-header a {
+    padding: 0.5rem 0.5rem;
+  }
+  header .social-links {
+    display: none;
+  }
+  main .section1 .about h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0 0.5rem;
+  }
+  main .section1 .container .about p {
+    margin: 4rem 2rem;
+  }
+  main .section2 .container .services .heading h2 {
+    margin: 0 1rem;
+  }
+  main .section2 .services .issues {
+    margin: 0 1rem;
+    margin-top: 5rem;
+  }
+  main .section3 .container .contact .heading h2 {
+    font-size: 2rem;
+  }
+  footer .newsletter .container-sub .item2 {
+    padding: 0 1rem;
+  }
+  .verticleline,
+  .verticleline1,
+  .verticleline11,
+  .verticleline2,
+  .verticleline22,
+  .verticleline3,
+  .verticleline33 {
+    display: none;
+  }
+}
