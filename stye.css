@@ -133,6 +133,13 @@ header nav.hide {
 header nav .title a {
   color: teal;
 }
+header nav .title a i {
+  font-size: 2rem;
+}
+
+header nav .title p {
+  display: inline-block;
+}
 
 header nav .title p span {
   color: teal;
