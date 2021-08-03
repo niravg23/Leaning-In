@@ -197,13 +197,24 @@
                 <h4>SEND US A MESSAGE</h4>
                 <form name="contact" method="POST" data-netlify="true">
                   <div class="form-input">
-                    <input type="text" name="name" placeholder="Your Name" />
-                  </div>
-                  <div class="form-input">
-                    <input type="email" name="email" placeholder="Your Email" />
+                    <input
+                      id="name"
+                      type="text"
+                      name="name"
+                      placeholder="Your Name"
+                    />
                   </div>
                   <div class="form-input">
                     <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      placeholder="Your Email"
+                    />
+                  </div>
+                  <div class="form-input">
+                    <input
+                      id="number"
                       type="number"
                       name="number"
                       placeholder="Your Number"
@@ -218,7 +229,7 @@
                       placeholder="Your Message"
                     ></textarea>
                   </div>
-                  <button class="btn">SEND</button>
+                  <button id="form-button" class="btn">SEND</button>
                 </form>
               </div>
               <div class="contact-details">
