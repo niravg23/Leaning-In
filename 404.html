@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./stye.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>404 Error</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      header {
+        background-color: black;
+        position: relative;
+        height: 100vh;
+        /* width: 100vw; */
+      }
+      header .logo {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        height: 80px;
+        padding: 0.5rem;
+        margin-left: 2rem;
+      }
+
+      header .logo i {
+        font-size: 3rem;
+        color: #008080;
+      }
+
+      header .logo p {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #fff;
+        margin-left: 0.75rem;
+      }
+
+      header .logo p span {
+        color: teal;
+        margin-left: 0.2rem;
+      }
+
+      header .hamburger {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        padding: 0.5rem;
+        z-index: 1500;
+        transition: all 0.5s ease-in-out;
+      }
+
+      header .hamburger.hide {
+        opacity: 0;
+      }
+
+      header .hamburger.dark {
+        background: black;
+      }
+
+      header .hamburger:hover {
+        /* padding: 0.5rem; */
+        background: #0b0b0b;
+      }
+
+      header .hamburger span {
+        display: block;
+        height: 2px;
+        width: 20px;
+        background: #fff;
+        margin-bottom: 5px;
+      }
+      header nav {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 300px;
+        z-index: 1000;
+        padding: 3rem;
+        background: #111111;
+        color: #fff;
+        letter-spacing: 0.1rem;
+        font-size: 1.3rem;
+        transition: all 0.5s ease-in-out;
+      }
+
+      header nav.hide {
+        transform: translateX(100%);
+      }
+
+      header nav .title a {
+        color: teal;
+      }
+      header nav .title a i {
+        font-size: 2rem;
+      }
+
+      header nav .title p span {
+        color: teal;
+      }
+
+      header nav .title {
+        margin-bottom: 3rem;
+      }
+
+      header nav ul {
+        list-style: none;
+      }
+
+      header nav ul li {
+        display: block;
+        padding: 0.75rem 0;
+        font-weight: 500;
+        line-height: 1.5rem;
+        border-bottom: 2px transparent solid;
+        transition: all 0.3s ease-in-out;
+      }
+
+      header nav ul li:hover {
+        color: teal;
+      }
+
+      header nav p.small {
+        font-size: 0.6rem;
+        line-height: 1rem;
+        /* letter-spacing: 0.05rem; */
+        margin-top: 3rem;
+      }
+
+      header nav .links {
+        margin-top: 2rem;
+      }
+
+      header nav .links a {
+        color: #fff;
+      }
+
+      header nav .links i {
+        font-size: 1.25rem;
+        padding-right: 1rem;
+        transition: all 0.3s ease-in-out;
+      }
+
+      header nav .links i:hover {
+        color: teal;
+      }
+
+      header nav .cross {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 0.3rem 0.5rem;
+        background: black;
+      }
+
+      header nav .cross span {
+        display: block;
+        height: 2px;
+        width: 20px;
+        background: #fff;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+
+      header nav .cross span:first-child {
+        transform: rotate(45deg);
+        transform-origin: -4px 6px;
+      }
+      header nav .cross span:last-child {
+        transform: rotate(-45deg);
+        transform-origin: 9px 1px;
+      }
+
+      header div.maintext {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 15vw;
+        height: 100%;
+        color: #fff;
+        padding-top: 5rem;
+        padding-left: 5rem;
+      }
+
+      header div.maintext p {
+        font-weight: 600;
+        font-size: 3rem;
+      }
+
+      header div.maintext span {
+        color: teal;
+        font-size: 4rem;
+      }
+
+      header div.maintext .cta-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 4rem;
+        /* padding: 0 5rem; */
+      }
+
+      header div.maintext .cta-header a {
+        text-decoration: none;
+        color: #fff;
+        line-height: 1.75rem;
+        padding: 1rem 2rem;
+        background: #0b0b0b;
+        outline: #fff solid;
+        /* margin-right: 3rem; */
+      }
+
+      header div.maintext .cta-header a:hover {
+        color: #0b0b0b;
+        background: #fff;
+        outline: #0b0b0b solid;
+      }
+      @media (max-width: 500px) {
+        header div.maintext {
+          padding-top: 5rem;
+          padding-left: 0rem;
+        }
+
+        header div.maintext p {
+          font-size: 2rem;
+        }
+        header div.maintext span {
+          font-size: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <a href=""> <i class="fas fa-spa"></i></a>
+        <p>Leaning In<span>.</span></p>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="hide">
+        <div class="title">
+          <a href="./index.html#header"> <i class="fas fa-spa"></i></a>
+          <p>Leaning In<span>.</span></p>
+        </div>
+        <ul>
+          <a href="./index.html#header"> <li>Home</li></a>
+          <a href="./index.html#section1"> <li>About</li></a>
+          <a href="./index.html#section2"><li>Services</li> </a>
+          <!-- <a href=""> <li>Clients</li></a> -->
+          <a href="./index.html#section3"><li>Contact</li> </a>
+          <a href=""><li>404 Page</li> </a>
+        </ul>
+        <p class="small">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iste
+          repudiandae, harum quos laborum minima quis ullam. Ipsa, nesciunt
+          esse.
+        </p>
+        <div class="links">
+          <a
+            href="https://www.facebook.com/profile.php?id=100010743817037"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/niravg23/" target="_blank">
+            <i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/nirav-gameti-244165132/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="#"> <i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="cross">
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <div class="maintext">
+        <p>
+          <span> <i class="fas fa-exclamation-triangle"> </i> 404 </span>
+        </p>
+        <p>OOPS... SOMETHING WENT WRONG</p>
+        <div class="cta-header">
+          <a href="./index.html" class="btn">BACK TO HOME PAGE</a>
+        </div>
+      </div>
+    </header>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
